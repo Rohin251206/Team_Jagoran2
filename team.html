@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    }
+
+    header {
+    background-color: #0a3d62;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    }
+
+    header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    }
+
+    header p {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: #dff9fb;
+    }
+
+    nav {
+    background-color: #1e3799;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+  nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin:0;
+  list-style:none;
+}
+
+nav ul li {
+  margin: 5px;
+}
+
+
+    nav ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #3c6382;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    main h2 {
+      color: #0a3d62;
+    }
+    .team-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 people per row */
+  gap: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.team-member {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.team-member h3 {
+  margin: 10px 0;
+  color: #0a3d62;
+}
+
+.team-member button {
+  background: #1e3799;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+
+.team-member button:hover {
+  background: #3c6382;
+}
+
+.details {
+  display: none;  /* hidden by default */
+  margin-top: 15px;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #333;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 8px;
+}
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;  /* makes it a circle */
+  object-fit: cover;   /* crops nicely */
+  margin-bottom: 10px;
+  border: 3px solid #1e3799;
+}
+.card, .team-member, .idea-box, .feature-box, .impl-box, .challenge-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover, .team-member:hover, .idea-box:hover, .feature-box:hover, .impl-box:hover, .challenge-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+footer {
+  text-align: center;
+  background: linear-gradient(135deg, #0a3d62, #1e3799);
+  color: white;
+  padding: 18px 10px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: auto;  /* pushes footer to bottom */
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.15);
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #dff9fb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+    </style>
+
+</head>
+<body>
+  <header>
+    <h1>Meet the Tech Phoenix Team</h1>
+  </header>
+<nav>
+    <ul>
+       <li><a href="D:\Tech Pheonix\home.html">Home</a></li>
+       <li><a href="D:\Tech Pheonix\team.html">Team Member</a></li>
+       <li><a href="D:\Tech Pheonix\idea.html">Idea</a></li>
+       <li><a href="D:\Tech Pheonix\feature.html">Features</a></li>
+       <li><a href="D:\Tech Pheonix\implementation.html">Implementation</a></li>
+       <li><a href="D:\Tech Pheonix\challenges.html">Challenges</a></li>
+       <li><a href="D:\Tech Pheonix\scope.html">Scope</a></li>
+       <li><a href="D:\Tech Pheonix\about.html">About</a></li>
+    </ul>
+</nav>    
+<main>
+ <main>
+  <h2>Meet Our Team</h2>
+  <div class="team-container">
+
+    <div class="team-member">
+      <h3>Joy Ghatak</h3>
+    <img src="PHOTO" alt="Joy Ghatak">
+      <p>UI/UX Designer</p>
+      <button onclick="toggleDetails('joy')">View Profile</button>
+      <div id="joy" class="details">
+        <p>Crafting user-friendly, intuitive interfaces to enhance platform experience.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <h3>Ankan Peyada</h3>
+      <img src="PHOTO-2" alt="Joy Ghatak">
+      <p>Frontend Developer</p>
+      <button onclick="toggleDetails('ankan')">View Profile</button>
+      <div id="ankan" class="details">
+        <p>Focused on building interactive and responsive web components.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <h3>Rohin Chakrabarty</h3>
+      <img src="PHOTO-2" alt="Joy Ghatak">
+      <p>Database Architect</p>
+      <button onclick="toggleDetails('rohin')">View Profile</button>
+      <div id="rohin" class="details">
+        <p>Ensures scalable, secure storage and efficient data retrieval.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <h3>Debanjan Mondal</h3>
+      <img src="PHOTO-" alt="Joy Ghatak">
+      <p>Backend Developer</p>
+      <button onclick="toggleDetails('debanjan')">View Profile</button>
+      <div id="debanjan" class="details">
+        <p>Manages server logic and API integrations for seamless functionality.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+</main>
+<footer>
+  <p>
+    &copy; 2025 Tech Phoenix | Contact: joyghatak0099@gmail.com
+  </p>
+</footer>
+<script>
+function toggleDetails(id) {
+  const details = document.getElementById(id);
+  details.style.display = (details.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</body>
+</html>

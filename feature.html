@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features - SkillSwap</title>
+  <style>
+     body {
+      margin: 0;
+      min-height: 100vh;          /* full height */
+      display: flex;
+      flex-direction: column;     /* stack header, main, footer */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #0a3d62;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      background-color: #1e3799;
+      padding: 10px 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 5px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #f1f1f1;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition:  0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #3c6382;
+    }
+
+    main {
+      flex:1;
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      margin-bottom: 25px;
+    }
+
+    main h2 {
+      color: #0a3d62;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+     main h2 {
+      color: #0a3d62;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .feature-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-box h3 {
+      color: #1e3799;
+      margin-bottom: 10px;
+    }
+
+    .feature-box p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+
+    
+     footer {
+  text-align: center;
+  background: linear-gradient(135deg, #0a3d62, #1e3799);
+  color: white;
+  padding: 18px 10px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: auto;  /* pushes footer to bottom */
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.15);
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #dff9fb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+  <h1>SkillSwap Features</h1>
+</header>
+
+<nav>
+  <ul>
+       <li><a href="D:\Tech Pheonix\home.html">Home</a></li>
+       <li><a href="D:\Tech Pheonix\team.html">Team Member</a></li>
+       <li><a href="D:\Tech Pheonix\idea.html">Idea</a></li>
+       <li><a href="D:\Tech Pheonix\feature.html">Features</a></li>
+       <li><a href="D:\Tech Pheonix\implementation.html">Implementation</a></li>
+       <li><a href="D:\Tech Pheonix\challenges.html">Challenges</a></li>
+       <li><a href="D:\Tech Pheonix\scope.html">Scope</a></li>
+       <li><a href="D:\Tech Pheonix\about.html">About</a></li>
+    </ul>
+</nav>
+
+<main>
+  <h2>Key Features of SkillSwap</h2>
+  <div class="features-grid">
+
+    <div class="feature-box">
+      <h3>👤 User Profiles</h3>
+      <p>Members list their teachable and desired skills, making it easy to connect with the right partners.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>🔗 Matching Algorithm</h3>
+      <p>Smart matching connects users with complementary skills for fair and effective exchanges.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>📅 Scheduling System</h3>
+      <p>Arrange sessions at convenient times, with tools to handle availability and time zones.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>⭐ Review System</h3>
+      <p>Peer reviews ensure quality learning, accountability, and trust within the community.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Tech Phoenix | Contact: joyghatak0099@gmail.com</p>
+</footer>
+
+</body>
+</html>

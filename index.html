@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    margin: 0;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;     /* stack header, main, footer */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    }
+    header {
+    background-color: #0a3d62;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    }
+
+    header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    }
+
+    header p {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: #dff9fb;
+    }
+
+    nav {
+    background-color: #1e3799;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+  nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin:0;
+  list-style:none;
+}
+
+nav ul li {
+  margin: 5px;
+}
+
+
+    nav ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition:  0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #3c6382;
+    }
+
+    main {
+      flex:1;
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    main section {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+    main section:hover{
+      transform:translatey(-5px);
+    }
+
+    main h2 {
+      color: #0a3d62;
+    }
+
+  footer {
+  text-align:center;
+  background: linear-gradient(135deg, #0a3d62, #1e3799);
+  position:relative;
+  color: white;
+  display: flex;              /* enable flexbox */
+  justify-content: center;    /* center horizontally */
+  align-items: center;  
+  padding: 18px 10px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: auto;  /* pushes footer to bottom */
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.15);
+}
+
+footer p {
+  margin:auto;
+  position:absolute;
+  bottom:0;
+}
+
+footer a {
+  color: #dff9fb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to SkillSwap</h1>
+    <p>Empowering Peer-to-Peer Skill Exchange</p>
+<nav>
+    <ul>
+       <li><a href="D:\Tech Pheonix\home.html">Home</a></li>
+       <li><a href="D:\Tech Pheonix\team.html">Team Member</a></li>
+       <li><a href="D:\Tech Pheonix\idea.html">Idea</a></li>
+       <li><a href="D:\Tech Pheonix\feature.html">Features</a></li>
+       <li><a href="D:\Tech Pheonix\implementation.html">Implementation</a></li>
+       <li><a href="D:\Tech Pheonix\challenges.html">Challenges</a></li>
+       <li><a href="D:\Tech Pheonix\scope.html">Scope</a></li>
+       <li><a href="D:\Tech Pheonix\about.html">About</a></li>
+    </ul>
+</nav>
+</header>  
+<main>
+    <section class ="intro">
+        <h2>what is SkillSwap?</h2>
+        <p>SkillSwap is a platform where users exchange skills without using money. It's all about community-driven learning and sharing.</p>
+
+    </section>
+
+    <section class="Example">
+        <h2>Example</h2>
+        <p>Someone can teach coding in exchange for learning graphic design — no cash involved, just skills.</p>
+    
+    </section>
+ 
+</main>  
+<footer>
+    <p>&copy; 2025 Tech Phoenix | Contact: joyghatak0099@gmail.com</p>
+</footer>
+
+</body>
+</html>
